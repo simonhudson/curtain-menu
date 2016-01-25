@@ -1,0 +1,11 @@
+header {
+    background:#dfdfdf;
+    height:70px;
+    position:relative;
+}
+.menu-toggle {
+    padding:10px;
+    position:absolute;
+    right:10px;
+    top:10px;
+}
