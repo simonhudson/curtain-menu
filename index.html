@@ -19,31 +19,99 @@
 
     <header>
         <button class="js-menu-toggle menu-toggle">
-            <!-- <span class="fa fa-bars fa-2x"></span> -->
-            <span class="header-icons__text hidden">Menu</span>
+            <span class="fa fa-bars fa-2x"></span>
         </button>
     </header>
 
-    <div class="curtain">
-        <nav class="curtain__level-1">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+    <div class="curtain curtain--level-1 js-curtain--level-1">
+        <nav class="level-1__nav">
+            <ul class="level-1__list">
+                <li class="level-1__item curtain__item">
+                    <a class="level-1__link curtain__link" data-level-2-target="home" href="#">
+                        <span class="fa fa-home fa-2x curtain__icon"></span>
+                        Home
+                    </a>
+                    <div class="curtain curtain--level-2 js-curtain--level-2" data-level-2="home">
+                        <nav class="level-2__nav">
+                            <ul class="level-2__list">
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        Level 1.1
+                                    </a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">Level 1.2</a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">Level 1.3</a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">Level 1.4</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">About</a>
+                <li class="level-1__item curtain__item">
+                    <a class="level-1__link curtain__link" data-level-2-target="settings" href="#">
+                        <span class="fa fa-cog fa-2x curtain__icon"></span>
+                        Settings
+                    </a>
+                    <div class="curtain curtain--level-2 js-curtain--level-2" data-level-2="settings">
+                        <nav class="level-2__nav">
+                            <ul class="level-2__list">
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        Settings 1
+                                    </a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        Settings 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Settings</a>
-                </li>
-                <li>
-                    <a href="#">Products</a>
+                <li class="level-1__item curtain__item">
+                    <a class="level-1__link curtain__link" data-level-2-target="account" href="#">
+                        <span class="fa fa-user fa-2x curtain__icon"></span>
+                        My account
+                    </a>
+                    <div class="curtain curtain--level-2 js-curtain--level-2" data-level-2="account">
+                        <nav class="level-2__nav">
+                            <ul class="level-2__list">
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        My account 1
+                                    </a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        My account 2
+                                    </a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        My account 3
+                                    </a>
+                                </li>
+                                <li class="level-2__item curtain__item">
+                                    <a class="level-2__link curtain__link" href="#">
+                                        My account 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </li>
             </ul>
         </nav>
     </div>
 
 </div>
-
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/curtain-menu.js"></script>
 </body>
 </html>

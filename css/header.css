@@ -1,9 +1,13 @@
 header {
-    background:#dfdfdf;
+    background:#080809;
     height:70px;
     position:relative;
+    width:100%;
 }
 .menu-toggle {
+    background:0;
+    border:0;
+    color:#fff;
     padding:10px;
     position:absolute;
     right:10px;

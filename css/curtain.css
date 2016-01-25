@@ -1,5 +1,41 @@
-.curtain {
-    left:0;
+.curtain--level-1,
+.curtain--level-2 {
+    background:#282828;
+    left:-80%;
     position:absolute;
     top:0;
+        -webkit-transition:left .3s linear;
+        -moz-transition:left .3s linear;
+        -ms-transition:left .3s linear;
+    transition:left .3s linear;
+    width:80%;
+    z-index:1;
+}
+.curtain--level-1.is-open {
+    left:0;
+}
+.curtain__item {
+    list-style:none outside;
+}
+.curtain__link {
+    color:#fff;
+    display:block;
+    font-weight:bold;
+    padding:20px 10px;
+    text-decoration:none;
+}
+.level-1__link {
+    text-transform:uppercase;
+}
+.curtain--level-2 {
+    background:#052C7E;
+    z-index:2;
+}
+.curtain--level-2.is-open {
+    left:45px;
+}
+.curtain__icon {
+    height:30px;
+    margin-right:5px;
+    width:30px;
 }
