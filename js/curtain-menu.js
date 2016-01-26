@@ -37,10 +37,12 @@ var CurtainMenu = {
     toggleLevel2: function(element) {
         CurtainMenu.Obj.level2.removeClass(CurtainMenu.openClass);
         var target = $('[data-level-2="' + element.attr('data-level-2-target') + '"]');
-        if (target.hasClass(CurtainMenu.openClass))
+        if (target.hasClass(CurtainMenu.openClass)) {
             target.removeClass(CurtainMenu.openClass);
-        else
+        } else {
             target.addClass(CurtainMenu.openClass);
+        }
+        target.width(CurtainMenu.Obj.level1.width() - 50);
     }
 
 
